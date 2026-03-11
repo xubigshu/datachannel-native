@@ -39,8 +39,8 @@ private:
         friend ::djinni::JniInterface<::libdc::DcEventCallback, ::djinni_generated::NativeDcEventCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/DcEventCallback") };
-    const jmethodID method_onEvent { ::djinni::jniGetMethodID(clazz.get(), "onEvent", "(Lcom/cdnbye/libdc/DcEvent;)V") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/DcEventCallback") };
+    const jmethodID method_onEvent { ::djinni::jniGetMethodID(clazz.get(), "onEvent", "(Lgitv/xds/libdc/DcEvent;)V") };
 };
 
 } // namespace djinni_generated

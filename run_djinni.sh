@@ -26,7 +26,7 @@ jni_out="$base_dir/generated-src/jni"
 objc_out="$base_dir/generated-src/objc"
 java_out="$base_dir/generated-src/java/com/cdnbye/libdc"
 
-java_package="com.cdnbye.libdc"
+java_package="gitv.xds.libdc"
 
 gen_stamp="$temp_out/gen.stamp"
 

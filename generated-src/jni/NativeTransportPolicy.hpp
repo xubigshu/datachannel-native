@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeTransportPolicy>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeTransportPolicy() : JniEnum("com/cdnbye/libdc/TransportPolicy") {}
+    NativeTransportPolicy() : JniEnum("gitv/xds/libdc/TransportPolicy") {}
     friend ::djinni::JniClass<NativeTransportPolicy>;
 };
 

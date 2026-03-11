@@ -24,13 +24,13 @@ private:
     NativeConfiguration();
     friend ::djinni::JniClass<NativeConfiguration>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/Configuration") };
-    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Ljava/util/ArrayList;Lcom/cdnbye/libdc/ProxyServer;Ljava/lang/String;Lcom/cdnbye/libdc/CertificateType;Lcom/cdnbye/libdc/TransportPolicy;ZZZZIILjava/lang/Integer;Ljava/lang/Integer;)V") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/Configuration") };
+    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Ljava/util/ArrayList;Lgitv/xds/libdc/ProxyServer;Ljava/lang/String;Lgitv/xds/libdc/CertificateType;Lgitv/xds/libdc/TransportPolicy;ZZZZIILjava/lang/Integer;Ljava/lang/Integer;)V") };
     const jfieldID field_mIceServers { ::djinni::jniGetFieldID(clazz.get(), "mIceServers", "Ljava/util/ArrayList;") };
-    const jfieldID field_mProxyServer { ::djinni::jniGetFieldID(clazz.get(), "mProxyServer", "Lcom/cdnbye/libdc/ProxyServer;") };
+    const jfieldID field_mProxyServer { ::djinni::jniGetFieldID(clazz.get(), "mProxyServer", "Lgitv/xds/libdc/ProxyServer;") };
     const jfieldID field_mBindAddress { ::djinni::jniGetFieldID(clazz.get(), "mBindAddress", "Ljava/lang/String;") };
-    const jfieldID field_mCertificateType { ::djinni::jniGetFieldID(clazz.get(), "mCertificateType", "Lcom/cdnbye/libdc/CertificateType;") };
-    const jfieldID field_mIceTransportPolicy { ::djinni::jniGetFieldID(clazz.get(), "mIceTransportPolicy", "Lcom/cdnbye/libdc/TransportPolicy;") };
+    const jfieldID field_mCertificateType { ::djinni::jniGetFieldID(clazz.get(), "mCertificateType", "Lgitv/xds/libdc/CertificateType;") };
+    const jfieldID field_mIceTransportPolicy { ::djinni::jniGetFieldID(clazz.get(), "mIceTransportPolicy", "Lgitv/xds/libdc/TransportPolicy;") };
     const jfieldID field_mEnableIceTcp { ::djinni::jniGetFieldID(clazz.get(), "mEnableIceTcp", "Z") };
     const jfieldID field_mEnableIceUdpMux { ::djinni::jniGetFieldID(clazz.get(), "mEnableIceUdpMux", "Z") };
     const jfieldID field_mDisableAutoNegotiation { ::djinni::jniGetFieldID(clazz.get(), "mDisableAutoNegotiation", "Z") };

@@ -39,7 +39,7 @@ private:
         friend ::djinni::JniInterface<::libdc::DcErrorCallback, ::djinni_generated::NativeDcErrorCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/DcErrorCallback") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/DcErrorCallback") };
     const jmethodID method_onError { ::djinni::jniGetMethodID(clazz.get(), "onError", "(Ljava/lang/String;)V") };
 };
 

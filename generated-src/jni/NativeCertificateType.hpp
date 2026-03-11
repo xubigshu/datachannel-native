@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeCertificateType>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeCertificateType() : JniEnum("com/cdnbye/libdc/CertificateType") {}
+    NativeCertificateType() : JniEnum("gitv/xds/libdc/CertificateType") {}
     friend ::djinni::JniClass<NativeCertificateType>;
 };
 

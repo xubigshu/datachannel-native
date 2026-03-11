@@ -9,19 +9,19 @@
 
 namespace djinni_generated {
 
-NativeDataChannel::NativeDataChannel() : ::djinni::JniInterface<::libdc::DataChannel, NativeDataChannel>("com/cdnbye/libdc/DataChannel$CppProxy") {}
+NativeDataChannel::NativeDataChannel() : ::djinni::JniInterface<::libdc::DataChannel, NativeDataChannel>("gitv/xds/libdc/DataChannel$CppProxy") {}
 
 NativeDataChannel::~NativeDataChannel() = default;
 
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         delete reinterpret_cast<::djinni::CppProxyHandle<::libdc::DataChannel>*>(nativeRef);
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1close(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1close(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -29,7 +29,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1sendText(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_msg)
+CJNIEXPORT jboolean JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1sendText(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_msg)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -38,7 +38,7 @@ CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_nati
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1sendBinary(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jbyteArray j_msg)
+CJNIEXPORT jboolean JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1sendBinary(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jbyteArray j_msg)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -47,7 +47,7 @@ CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_nati
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1isOpen(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jboolean JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1isOpen(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -56,7 +56,7 @@ CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_nati
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1isClosed(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jboolean JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1isClosed(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -65,7 +65,7 @@ CJNIEXPORT jboolean JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_nati
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1maxMessageSize(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jint JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1maxMessageSize(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -74,7 +74,7 @@ CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1bufferedAmount(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jint JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1bufferedAmount(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -83,7 +83,7 @@ CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1onOpen(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1onOpen(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -91,7 +91,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1onClosed(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1onClosed(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -99,7 +99,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1onError(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1onError(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -107,7 +107,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1onMessage(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1onMessage(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -115,7 +115,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1onBufferedAmountLow(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1onBufferedAmountLow(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);
@@ -123,7 +123,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_DataChannel_00024CppProxy_native_1setBufferedAmountLowThreshold(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jint j_amount)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_DataChannel_00024CppProxy_native_1setBufferedAmountLowThreshold(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jint j_amount)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::DataChannel>(nativeRef);

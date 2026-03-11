@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeDcEvent>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeDcEvent() : JniEnum("com/cdnbye/libdc/DcEvent") {}
+    NativeDcEvent() : JniEnum("gitv/xds/libdc/DcEvent") {}
     friend ::djinni::JniClass<NativeDcEvent>;
 };
 

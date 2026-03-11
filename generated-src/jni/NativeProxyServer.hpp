@@ -24,9 +24,9 @@ private:
     NativeProxyServer();
     friend ::djinni::JniClass<NativeProxyServer>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/ProxyServer") };
-    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Lcom/cdnbye/libdc/ProxyServerType;Ljava/lang/String;SLjava/lang/String;Ljava/lang/String;)V") };
-    const jfieldID field_mType { ::djinni::jniGetFieldID(clazz.get(), "mType", "Lcom/cdnbye/libdc/ProxyServerType;") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/ProxyServer") };
+    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Lgitv/xds/libdc/ProxyServerType;Ljava/lang/String;SLjava/lang/String;Ljava/lang/String;)V") };
+    const jfieldID field_mType { ::djinni::jniGetFieldID(clazz.get(), "mType", "Lgitv/xds/libdc/ProxyServerType;") };
     const jfieldID field_mHostname { ::djinni::jniGetFieldID(clazz.get(), "mHostname", "Ljava/lang/String;") };
     const jfieldID field_mPort { ::djinni::jniGetFieldID(clazz.get(), "mPort", "S") };
     const jfieldID field_mUsername { ::djinni::jniGetFieldID(clazz.get(), "mUsername", "Ljava/lang/String;") };

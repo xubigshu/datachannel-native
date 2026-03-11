@@ -24,9 +24,9 @@ private:
     NativeReliability();
     friend ::djinni::JniClass<NativeReliability>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/Reliability") };
-    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Lcom/cdnbye/libdc/ReliabilityType;ZJ)V") };
-    const jfieldID field_mType { ::djinni::jniGetFieldID(clazz.get(), "mType", "Lcom/cdnbye/libdc/ReliabilityType;") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/Reliability") };
+    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Lgitv/xds/libdc/ReliabilityType;ZJ)V") };
+    const jfieldID field_mType { ::djinni::jniGetFieldID(clazz.get(), "mType", "Lgitv/xds/libdc/ReliabilityType;") };
     const jfieldID field_mUnordered { ::djinni::jniGetFieldID(clazz.get(), "mUnordered", "Z") };
     const jfieldID field_mRexmitMs { ::djinni::jniGetFieldID(clazz.get(), "mRexmitMs", "J") };
 };

@@ -14,7 +14,7 @@ plugins {
 
     alias(libs.plugins.nexus.staging)
 
-    alias(libs.plugins.versions)
+//    alias(libs.plugins.versions)
     alias(libs.plugins.versionUpdate)
 }
 

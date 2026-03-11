@@ -11,13 +11,13 @@ TODO
 ### Minimum example
 
 ```kotlin
-import com.cdnbye.libdc.DataChannel
-import com.cdnbye.libdc.DcMessageCallback
-import com.cdnbye.libdc.LibDC
-import com.cdnbye.libdc.LogLevel.DEBUG
-import com.cdnbye.libdc.PeerConnection
-import com.cdnbye.libdc.createDataChannel
-import com.cdnbye.libdc.rtcConfiguration
+import gitv.xds.libdc.DataChannel
+import gitv.xds.libdc.DcMessageCallback
+import gitv.xds.libdc.LibDC
+import gitv.xds.libdc.LogLevel.DEBUG
+import gitv.xds.libdc.PeerConnection
+import gitv.xds.libdc.createDataChannel
+import gitv.xds.libdc.rtcConfiguration
 
 // inject custom logger
 PeerConnection.initLogger(DEBUG) { level, message ->

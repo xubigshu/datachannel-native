@@ -39,8 +39,8 @@ private:
         friend ::djinni::JniInterface<::libdc::IceStateCallback, ::djinni_generated::NativeIceStateCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/IceStateCallback") };
-    const jmethodID method_onStateChanged { ::djinni::jniGetMethodID(clazz.get(), "onStateChanged", "(Lcom/cdnbye/libdc/IceState;)V") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/IceStateCallback") };
+    const jmethodID method_onStateChanged { ::djinni::jniGetMethodID(clazz.get(), "onStateChanged", "(Lgitv/xds/libdc/IceState;)V") };
 };
 
 } // namespace djinni_generated

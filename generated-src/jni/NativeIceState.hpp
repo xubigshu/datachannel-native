@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeIceState>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeIceState() : JniEnum("com/cdnbye/libdc/IceState") {}
+    NativeIceState() : JniEnum("gitv/xds/libdc/IceState") {}
     friend ::djinni::JniClass<NativeIceState>;
 };
 

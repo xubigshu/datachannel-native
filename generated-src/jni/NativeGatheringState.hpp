@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeGatheringState>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeGatheringState() : JniEnum("com/cdnbye/libdc/GatheringState") {}
+    NativeGatheringState() : JniEnum("gitv/xds/libdc/GatheringState") {}
     friend ::djinni::JniClass<NativeGatheringState>;
 };
 

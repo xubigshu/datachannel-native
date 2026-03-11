@@ -126,7 +126,7 @@ if (ANDROID)
 else ()
     set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES
             FRAMEWORK TRUE
-            MACOSX_FRAMEWORK_IDENTIFIER com.cdnbye.libdc
+            MACOSX_FRAMEWORK_IDENTIFIER gitv.xds.libdc
             MACOSX_FRAMEWORK_BUNDLE_VERSION "${VERSION_NUMBER}"
             MACOSX_FRAMEWORK_SHORT_VERSION_STRING "${VERSION_NUMBER}"
             PUBLIC_HEADER "${public_headers}"

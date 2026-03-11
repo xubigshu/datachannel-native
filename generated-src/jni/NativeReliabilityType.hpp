@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeReliabilityType>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeReliabilityType() : JniEnum("com/cdnbye/libdc/ReliabilityType") {}
+    NativeReliabilityType() : JniEnum("gitv/xds/libdc/ReliabilityType") {}
     friend ::djinni::JniClass<NativeReliabilityType>;
 };
 

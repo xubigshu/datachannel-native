@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeLogLevel>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeLogLevel() : JniEnum("com/cdnbye/libdc/LogLevel") {}
+    NativeLogLevel() : JniEnum("gitv/xds/libdc/LogLevel") {}
     friend ::djinni::JniClass<NativeLogLevel>;
 };
 

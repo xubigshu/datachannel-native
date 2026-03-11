@@ -24,9 +24,9 @@ private:
     NativeDataChannelInit();
     friend ::djinni::JniClass<NativeDataChannelInit>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/DataChannelInit") };
-    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Lcom/cdnbye/libdc/Reliability;ZLjava/lang/Short;Ljava/lang/String;)V") };
-    const jfieldID field_mReliability { ::djinni::jniGetFieldID(clazz.get(), "mReliability", "Lcom/cdnbye/libdc/Reliability;") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/DataChannelInit") };
+    const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Lgitv/xds/libdc/Reliability;ZLjava/lang/Short;Ljava/lang/String;)V") };
+    const jfieldID field_mReliability { ::djinni::jniGetFieldID(clazz.get(), "mReliability", "Lgitv/xds/libdc/Reliability;") };
     const jfieldID field_mNegotiated { ::djinni::jniGetFieldID(clazz.get(), "mNegotiated", "Z") };
     const jfieldID field_mId { ::djinni::jniGetFieldID(clazz.get(), "mId", "Ljava/lang/Short;") };
     const jfieldID field_mProtocol { ::djinni::jniGetFieldID(clazz.get(), "mProtocol", "Ljava/lang/String;") };

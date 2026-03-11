@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeIceServerRelayType>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeIceServerRelayType() : JniEnum("com/cdnbye/libdc/IceServerRelayType") {}
+    NativeIceServerRelayType() : JniEnum("gitv/xds/libdc/IceServerRelayType") {}
     friend ::djinni::JniClass<NativeIceServerRelayType>;
 };
 

@@ -39,7 +39,7 @@ private:
         friend ::djinni::JniInterface<::libdc::CandidateCallback, ::djinni_generated::NativeCandidateCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/CandidateCallback") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/CandidateCallback") };
     const jmethodID method_onCandidate { ::djinni::jniGetMethodID(clazz.get(), "onCandidate", "(Ljava/lang/String;Ljava/lang/String;)V") };
 };
 

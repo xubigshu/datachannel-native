@@ -39,7 +39,7 @@ private:
         friend ::djinni::JniInterface<::libdc::SdpCallback, ::djinni_generated::NativeSdpCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/SdpCallback") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/SdpCallback") };
     const jmethodID method_onSdp { ::djinni::jniGetMethodID(clazz.get(), "onSdp", "(Ljava/lang/String;)V") };
 };
 

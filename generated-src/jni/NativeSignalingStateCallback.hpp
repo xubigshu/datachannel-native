@@ -39,8 +39,8 @@ private:
         friend ::djinni::JniInterface<::libdc::SignalingStateCallback, ::djinni_generated::NativeSignalingStateCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/SignalingStateCallback") };
-    const jmethodID method_onStateChanged { ::djinni::jniGetMethodID(clazz.get(), "onStateChanged", "(Lcom/cdnbye/libdc/SignalingState;)V") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/SignalingStateCallback") };
+    const jmethodID method_onStateChanged { ::djinni::jniGetMethodID(clazz.get(), "onStateChanged", "(Lgitv/xds/libdc/SignalingState;)V") };
 };
 
 } // namespace djinni_generated

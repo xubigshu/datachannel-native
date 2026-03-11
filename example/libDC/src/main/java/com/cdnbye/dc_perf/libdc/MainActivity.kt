@@ -29,12 +29,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.cdnbye.libdc.DataChannel
-import com.cdnbye.libdc.DcMessageCallback
-import com.cdnbye.libdc.LibDC
-import com.cdnbye.libdc.LogLevel.DEBUG
-import com.cdnbye.libdc.PeerConnection
-import com.cdnbye.libdc.createDataChannel
+import gitv.xds.libdc.DataChannel
+import gitv.xds.libdc.DcMessageCallback
+import gitv.xds.libdc.LibDC
+import gitv.xds.libdc.LogLevel.DEBUG
+import gitv.xds.libdc.PeerConnection
+import gitv.xds.libdc.createDataChannel
 
 @Composable
 fun MyApplicationTheme(

@@ -6,19 +6,19 @@
 
 namespace djinni_generated {
 
-NativeLibVersion::NativeLibVersion() : ::djinni::JniInterface<::libdc::LibVersion, NativeLibVersion>("com/cdnbye/libdc/LibVersion$CppProxy") {}
+NativeLibVersion::NativeLibVersion() : ::djinni::JniInterface<::libdc::LibVersion, NativeLibVersion>("gitv/xds/libdc/LibVersion$CppProxy") {}
 
 NativeLibVersion::~NativeLibVersion() = default;
 
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_LibVersion_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_LibVersion_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         delete reinterpret_cast<::djinni::CppProxyHandle<::libdc::LibVersion>*>(nativeRef);
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jstring JNICALL Java_com_cdnbye_libdc_LibVersion_version(JNIEnv* jniEnv, jobject /*this*/)
+CJNIEXPORT jstring JNICALL Java_gitv_xds_libdc_LibVersion_version(JNIEnv* jniEnv, jobject /*this*/)
 {
     try {
         auto r = ::libdc::LibVersion::version();

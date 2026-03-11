@@ -40,7 +40,7 @@ private:
         friend ::djinni::JniInterface<::libdc::DcMessageCallback, ::djinni_generated::NativeDcMessageCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/DcMessageCallback") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/DcMessageCallback") };
     const jmethodID method_onText { ::djinni::jniGetMethodID(clazz.get(), "onText", "(Ljava/lang/String;)V") };
     const jmethodID method_onBinary { ::djinni::jniGetMethodID(clazz.get(), "onBinary", "([B)V") };
 };

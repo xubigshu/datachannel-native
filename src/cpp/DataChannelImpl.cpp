@@ -4,6 +4,11 @@
 
 #include "DataChannelImpl.h"
 
+#if defined(__ANDROID__)
+#include <android/log.h>
+#define LIBDC_LOG_TAG "libdc"
+#endif
+
 #include "DcMessageCallback.hpp"
 #include "DcEvent.hpp"
 #include "DcEventCallback.hpp"
@@ -86,6 +91,10 @@ void DataChannelImpl::onMessage(const std::shared_ptr<DcMessageCallback>& callba
 void DataChannelImpl::onBufferedAmountLow(const std::shared_ptr<DcEventCallback>& callback) {
     if (dc_) {
         dc_->onBufferedAmountLow([callback]() {
+#if defined(__ANDROID__)
+            __android_log_print(ANDROID_LOG_DEBUG, LIBDC_LOG_TAG,
+                "onBufferedAmountLow: callback invoked by libdatachannel, calling Java");
+#endif
             callback->onEvent(DcEvent::BUFFEREDAMOUNTLOW);
         });
     }
@@ -93,6 +102,10 @@ void DataChannelImpl::onBufferedAmountLow(const std::shared_ptr<DcEventCallback>
 
 void DataChannelImpl::setBufferedAmountLowThreshold(int32_t amount) {
     if (dc_) {
+#if defined(__ANDROID__)
+        __android_log_print(ANDROID_LOG_DEBUG, LIBDC_LOG_TAG,
+            "setBufferedAmountLowThreshold: amount=%d", (int)amount);
+#endif
         dc_->setBufferedAmountLowThreshold(amount);
     }
 }

@@ -19,7 +19,7 @@ public:
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, CppType c) { return ::djinni::JniClass<NativeProxyServerType>::get().create(jniEnv, static_cast<jint>(c)); }
 
 private:
-    NativeProxyServerType() : JniEnum("com/cdnbye/libdc/ProxyServerType") {}
+    NativeProxyServerType() : JniEnum("gitv/xds/libdc/ProxyServerType") {}
     friend ::djinni::JniClass<NativeProxyServerType>;
 };
 

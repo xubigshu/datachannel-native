@@ -20,19 +20,19 @@
 
 namespace djinni_generated {
 
-NativePeerConnection::NativePeerConnection() : ::djinni::JniInterface<::libdc::PeerConnection, NativePeerConnection>("com/cdnbye/libdc/PeerConnection$CppProxy") {}
+NativePeerConnection::NativePeerConnection() : ::djinni::JniInterface<::libdc::PeerConnection, NativePeerConnection>("gitv/xds/libdc/PeerConnection$CppProxy") {}
 
 NativePeerConnection::~NativePeerConnection() = default;
 
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         delete reinterpret_cast<::djinni::CppProxyHandle<::libdc::PeerConnection>*>(nativeRef);
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1close(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1close(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -40,7 +40,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1setRemoteDescription(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_sdp)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1setRemoteDescription(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_sdp)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -48,7 +48,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1addRemoteCandidate(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_candidate, jstring j_mid)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1addRemoteCandidate(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_candidate, jstring j_mid)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -57,7 +57,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1onLocalDescription(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1onLocalDescription(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -65,7 +65,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1onLocalCandidate(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1onLocalCandidate(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -73,7 +73,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1onStateChange(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1onStateChange(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -81,7 +81,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1onGatheringStateChange(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1onGatheringStateChange(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -89,7 +89,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1onSignalingStateChange(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1onSignalingStateChange(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -97,7 +97,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1state(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jobject JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1state(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -106,7 +106,7 @@ CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_na
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1gatheringState(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jobject JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1gatheringState(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -115,7 +115,7 @@ CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_na
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1signalingState(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jobject JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1signalingState(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -124,7 +124,7 @@ CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_na
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1clearStats(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1clearStats(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -132,7 +132,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1bytesSent(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jint JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1bytesSent(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -141,7 +141,7 @@ CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1bytesReceived(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jint JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1bytesReceived(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -150,7 +150,7 @@ CJNIEXPORT jint JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jlong JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1rtt(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT jlong JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1rtt(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -159,7 +159,7 @@ CJNIEXPORT jlong JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nati
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1onDataChannel(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1onDataChannel(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_callback)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -167,7 +167,7 @@ CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_nativ
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_native_1createDataChannel(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_label, jobject j_init)
+CJNIEXPORT jobject JNICALL Java_gitv_xds_libdc_PeerConnection_00024CppProxy_native_1createDataChannel(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_label, jobject j_init)
 {
     try {
         const auto& ref = ::djinni::objectFromHandleAddress<::libdc::PeerConnection>(nativeRef);
@@ -177,7 +177,7 @@ CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_00024CppProxy_na
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_create(JNIEnv* jniEnv, jobject /*this*/, jobject j_config)
+CJNIEXPORT jobject JNICALL Java_gitv_xds_libdc_PeerConnection_create(JNIEnv* jniEnv, jobject /*this*/, jobject j_config)
 {
     try {
         auto r = ::libdc::PeerConnection::create(::djinni_generated::NativeConfiguration::toCpp(jniEnv, j_config));
@@ -185,7 +185,7 @@ CJNIEXPORT jobject JNICALL Java_com_cdnbye_libdc_PeerConnection_create(JNIEnv* j
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT void JNICALL Java_com_cdnbye_libdc_PeerConnection_initLogger(JNIEnv* jniEnv, jobject /*this*/, jobject j_level, jobject j_callback)
+CJNIEXPORT void JNICALL Java_gitv_xds_libdc_PeerConnection_initLogger(JNIEnv* jniEnv, jobject /*this*/, jobject j_level, jobject j_callback)
 {
     try {
         ::libdc::PeerConnection::initLogger(::djinni_generated::NativeLogLevel::toCpp(jniEnv, j_level),

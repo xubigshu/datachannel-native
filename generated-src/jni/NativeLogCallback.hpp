@@ -39,8 +39,8 @@ private:
         friend ::djinni::JniInterface<::libdc::LogCallback, ::djinni_generated::NativeLogCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/LogCallback") };
-    const jmethodID method_onLog { ::djinni::jniGetMethodID(clazz.get(), "onLog", "(Lcom/cdnbye/libdc/LogLevel;Ljava/lang/String;)V") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/LogCallback") };
+    const jmethodID method_onLog { ::djinni::jniGetMethodID(clazz.get(), "onLog", "(Lgitv/xds/libdc/LogLevel;Ljava/lang/String;)V") };
 };
 
 } // namespace djinni_generated

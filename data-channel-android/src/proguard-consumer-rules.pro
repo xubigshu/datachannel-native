@@ -1,3 +1,3 @@
--keep class com.cdnbye.libdc.**{*;}
--keep interface com.cdnbye.libdc.**{*;}
+-keep class gitv.xds.libdc.**{*;}
+-keep interface gitv.xds.libdc.**{*;}
 -keep class com.snapchat.djinni.**{*;}

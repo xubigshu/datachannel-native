@@ -39,8 +39,8 @@ private:
         friend ::djinni::JniInterface<::libdc::DcCallback, ::djinni_generated::NativeDcCallback>;
     };
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cdnbye/libdc/DcCallback") };
-    const jmethodID method_onDataChannel { ::djinni::jniGetMethodID(clazz.get(), "onDataChannel", "(Lcom/cdnbye/libdc/DataChannel;)V") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("gitv/xds/libdc/DcCallback") };
+    const jmethodID method_onDataChannel { ::djinni::jniGetMethodID(clazz.get(), "onDataChannel", "(Lgitv/xds/libdc/DataChannel;)V") };
 };
 
 } // namespace djinni_generated
