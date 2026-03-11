@@ -76,6 +76,10 @@ void DataChannelImpl::onError(const std::shared_ptr<DcErrorCallback>& callback) 
 void DataChannelImpl::onMessage(const std::shared_ptr<DcMessageCallback>& callback) {
     if (dc_) {
         dc_->onMessage([callback](std::variant<rtc::binary, rtc::string> message) {
+#if defined(__ANDROID__)
+            __android_log_print(ANDROID_LOG_DEBUG, LIBDC_LOG_TAG,
+                "DataChannelImpl: onMessage lambda entered (L3, before callback->onText/onBinary)");
+#endif
             if (std::holds_alternative<rtc::string>(message)) {
                 callback->onText(get<rtc::string>(message));
             } else {
