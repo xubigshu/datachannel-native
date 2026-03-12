@@ -26,11 +26,21 @@ void DataChannelImpl::close() {
 }
 
 bool DataChannelImpl::sendText(const std::string& msg) {
-    return dc_ && dc_->send(msg);
+    bool ok = dc_ && dc_->send(msg);
+#if defined(__ANDROID__)
+    __android_log_print(ANDROID_LOG_DEBUG, LIBDC_LOG_TAG,
+        "DataChannelImpl: sendText len=%lu ok=%d", (unsigned long)msg.size(), ok ? 1 : 0);
+#endif
+    return ok;
 }
 
 bool DataChannelImpl::sendBinary(const std::vector<uint8_t>& msg) {
-    return dc_ && dc_->send(reinterpret_cast<const std::byte*>(msg.data()), msg.size());
+    bool ok = dc_ && dc_->send(reinterpret_cast<const std::byte*>(msg.data()), msg.size());
+#if defined(__ANDROID__)
+    __android_log_print(ANDROID_LOG_DEBUG, LIBDC_LOG_TAG,
+        "DataChannelImpl: sendBinary len=%lu ok=%d", (unsigned long)msg.size(), ok ? 1 : 0);
+#endif
+    return ok;
 }
 
 bool DataChannelImpl::isOpen() {
